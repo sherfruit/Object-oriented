@@ -1,4 +1,4 @@
-# 面向对象与高级
+# 面向对象总结
 
 ## 第一天
 
@@ -2368,36 +2368,37 @@ var Person = function getPerson() {
 		}
 ```
 
-- 应用例子：
+-         应用例子：
 
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Title</title>
-  </head>
-  <style>
-      li {
-          margin-top: 5px;
-          height: 20px;
-          background-color: red;
-      }
-  </style>
-  <body>
-      <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-      </ul>
-      <script>
-          /*
+          ```html
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>Title</title>
+          </head>
+          <style>
+              li {
+                  margin-top: 5px;
+                  height: 20px;
+                  background-color: red;
+              }
+          </style>
+          <body>
+              <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+              <script>
+                  /*
           * 需要，点击不同的li，打印对应的角标值
           * */
 
           // 这种做法，可取
+          ```
          /* var lis = document.getElementsByTagName('li');
           for (var i = 0; i < lis.length; i++) {
               lis[i].index = i;
@@ -2405,7 +2406,7 @@ var Person = function getPerson() {
                   console.log(this.index);
               }
           }*/
-
+    
           // 这种做法，没有上的好
           var lis = document.getElementsByTagName('li');
           for (var i = 0; i < lis.length; i++) {
@@ -2428,7 +2429,7 @@ var Person = function getPerson() {
 
 > 同步：
 
-```javascript
+​```javascript
 		var a = 1;
         function fn() {
             console.log(1);
@@ -2443,7 +2444,7 @@ var Person = function getPerson() {
         // 调用fn2，传入fn，然后fn2里面马上调用fn，
         // 所以这里传入的回调函数是同步执行的。
         fn2(fn);
-```
+  ```
 
 > 异步：
 >
